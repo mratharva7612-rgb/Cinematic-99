@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');const course=new mongoose.Schema({title:String,titleMarathi:String,description:String,price:{type:Number,default:599},duration:Number,lessons:Number,level:String});module.exports=mongoose.model('Course',course);

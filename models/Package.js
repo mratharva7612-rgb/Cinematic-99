@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');const pkg=new mongoose.Schema({name:String,nameMarathi:String,price:Number,duration:String,videoLimit:Number,features:[String],description:String});module.exports=mongoose.model('Package',pkg);

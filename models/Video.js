@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');const vid=new mongoose.Schema({userId:{type:mongoose.Schema.Types.ObjectId,ref:'User'},title:String,originalFile:String,editedFile:String,status:{type:String,enum:['pending','completed','rejected'],default:'pending'},uploadedAt:{type:Date,default:Date.now},editedAt:Date,notes:String});module.exports=mongoose.model('Video',vid);

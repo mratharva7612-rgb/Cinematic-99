@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');const enroll=new mongoose.Schema({userId:{type:mongoose.Schema.Types.ObjectId,ref:'User'},courseId:{type:mongoose.Schema.Types.ObjectId,ref:'Course'},enrolledAt:{type:Date,default:Date.now},progress:{type:Number,default:0},completed:{type:Boolean,default:false}});module.exports=mongoose.model('CourseEnrollment',enroll);
